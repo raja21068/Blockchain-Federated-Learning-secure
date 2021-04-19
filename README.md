@@ -2,12 +2,12 @@
 
 
 
-# GFL Framework
+# Framework
 
 Federated learning framework based on pytorch and it provides different federated learning algorithm.
 
 
-## Main Framework Design
+## Federated Learning Framework Design
 ![imgaes](resource//pictures//framework_design.png)
 > The framework design reference PaddleFL
 
@@ -19,7 +19,7 @@ Federated learning framework based on pytorch and it provides different federate
 - User-Defined-Model: To specify the model in federated learning. 
 
 
-**FL Run-Time**
+**Federated Learning Run-Time**
 > If we have prepared the FL job, we can use this job to start FL task. one FL client can 
 >participate in multiple FL tasks and one FL client can communicate with multiple FL Servers
 - FLServer: if we use `FedAvg` as our federated learning algorithm, then the FlServer is responsible for synchronizing
@@ -29,7 +29,7 @@ temporary model parameters from various FLClients.
 - FLClient: The FLClient is responsible for training User-Defined-Model and commuticating with various FLServers. If we use 
 `Model distillation` as our federated learning algorithm, then the FLClient is also responsible for model distillation.
 
-## GFL Blockchain Framework Design
+## Federated Learning Blockchain Framework Design
 ![imgaes](resource//pictures//gfl_blokchain_framework_design.jpg)
 
 
